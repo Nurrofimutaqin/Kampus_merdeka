@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS 7</title>
+    <link rel="stylesheet" href="tugas7.css">
+</head>
+<body>
+    <div class="box">
+    <table border="1" cellspacing="0">
+        <thead>
+        <tr>
+            <th>Lokasi Gempa</th>
+            <th>Skala Gempa</th>
+            <th>Dampak Gempa</th>
+        </tr>
+        </thead>
+<script>
+    class gempa{
+        constructor(lokasi, skala){
+            this.lok = lokasi;
+            this.skala = skala;
+        }
+        dampak(dialami){
+            if (this.skala >= 0 && this.skala <=2) {
+                dialami = "dampak yang dialami tidak terasa";
+            } else if(this.skala > 2 && this.skala <=4){
+               dialami = "dampak yang dialami bangunan retak-retak";
+            }else if(this.skala > 4 && this.skala <=6){
+               dialami = "dampak yang dialami bangunan roboh";
+            }else if(this.skala >6){
+               dialami = "dampak yang dialami bangunan rubuh dan berpotensi tsunami";
+            }
+            
+            document.write(`<tr><td>${this.lok}</td>
+                            <td align='center'>${this.skala}</td>
+                            <td>${dialami}</td></tr>`);
+        }
+    }
+    let takeyama = new gempa("takeyama", 1);
+    let tokyo = new gempa("tokyo", 3);
+    let osaka = new gempa("osaka", 2);
+    let kyoto = new gempa("kyoto", 3.5);
+    let kanazawa = new gempa("kanazawa", 5.75);
+    let nara = new gempa("nara", 7.6);
+    let magome = new gempa("magome", 6);
+    let sendai = new gempa("sendai", 1);
+    let yokohama = new gempa("yokohama", 4.5);
+    let furano = new gempa("furano", 4);
+    takeyama.dampak();
+    tokyo.dampak();
+    osaka.dampak();
+    kyoto.dampak();
+    kanazawa.dampak();
+    nara.dampak();
+    magome.dampak();
+    sendai.dampak();
+    yokohama.dampak();
+    furano.dampak();
+</script> 
+    </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body{
+    background-color: darkgray;
+}
+.box{
+    width: 450px;
+	padding: 35px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background: whitesmoke;
+	box-shadow: 4px 8px 10px lightpink;
+	border-radius: 20px;
+}
+.box thead{
+    background-color: lightpink;
+}
+.box td{
+    padding: 5px;
+    text-transform: capitalize;
+}
