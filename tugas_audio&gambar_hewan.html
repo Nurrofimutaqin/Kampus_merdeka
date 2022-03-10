@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>latihan event 2</title>
+    <script src="jquery.js"></script>
+    <script>
+        $("document").ready(function () {
+            $(".kuda").click(function () {
+                $(this).css({
+                    background: "url('image/kuda.jpg')"
+                });
+                $("<audio></audio>").attr({
+                    src: 'audio/kuda.mp3',
+                    autoplay: 'autoplay'
+                })
+            });
+        });
+        $("document").ready(function () {
+            $(".ayam").click(function () {
+                $(this).css({
+                    background: "url('image/ayam.jpg')"
+                });
+                $("<audio></audio>").attr({
+                    src: 'audio/ayam.mp3',
+                    autoplay: 'autoplay'
+                })
+            });
+        });
+        $("document").ready(function () {
+            $(".sapi").click(function () {
+                $(this).css({
+                    background: "url('image/sapi.jpeg')"
+
+                });
+                $("<audio></audio>").attr({
+                    src: 'audio/sapi.mp3',
+                    autoplay: 'autoplay'
+                })
+            });
+        });
+        $("document").ready(function () {
+            $(".babi").click(function () {
+                $(this).css({
+                    background: "url('image/babi.jpg')"
+                });
+                $("<audio></audio>").attr({
+                    src: 'audio/babi.mp3',
+                    autoplay: 'autoplay'
+                })
+            });
+        });
+    </script>
+    <style type="text/css">
+        .kuda,
+        .ayam,
+        .sapi,
+        .babi {
+            background: greenyellow;
+            width: 180px;
+            height: 180px;
+            cursor: pointer;
+        }
+
+        .cover {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+            height: 220;
+
+
+        }
+
+        .desc {
+            padding: 25px;
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+
+        }
+
+        .box {
+            margin-left: 21%;
+        }
+
+        p {
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .clear {
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        klik pada setiap kotak untuk mengubah
+        background menjadi gambar dan bersuara
+    </p>
+    <div class="box">
+        <div class="cover">
+            <div class="kuda"></div>
+            <div class="desc">kuda</div>
+        </div>
+        <div class="cover">
+            <div class="ayam"></div>
+            <div class="desc">ayam</div>
+        </div>
+        <div class="cover">
+            <div class="sapi"></div>
+            <div class="desc">sapi</div>
+        </div>
+        <div class="cover">
+            <div class="babi"></div>
+            <div class="desc">babi</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
