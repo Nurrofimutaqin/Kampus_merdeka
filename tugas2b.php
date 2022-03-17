@@ -73,14 +73,13 @@
                 </div>
               </div>
               <div class="form-group">
-               <label for="hobi">Hobby</label> 
+               <label for="hobi">Hobby: </label> 
                 <div>
-                  <select id="hobi" name="hobi" required="required" class="custom-select">
                     <?php 
                     $h=1;
                     while($h <= 10) { 
                     ?>
-                    <option value="Hobby <?= $h ?>">Hobby  <?= $h ?></option>
+                    <input type="radio" name= "hobi" value="Hobby <?= $h ?>">Hobby  <?= $h ?>
                     <?php $h++; } ?>
                   </select>
                 </div>
