@@ -80,6 +80,7 @@
                     while($h <= 10) { 
                     ?>
                     <input type="radio" name= "hobi" value="Hobby <?= $h ?>">Hobby  <?= $h ?>
+			<br>
                     <?php $h++; } ?>
                   </select>
                 </div>
